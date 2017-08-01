@@ -14,6 +14,14 @@ from xadmin.views import BaseAdminView, CommAdminView
 class BaseSetting(object):
     enable_themes = True
     use_bootswatch = True
+    try:
+        pass
+    except Exception as e:
+        raise
+    else:
+        pass
+    finally:
+        pass
 xadmin.site.register(BaseAdminView, BaseSetting)
 
 
